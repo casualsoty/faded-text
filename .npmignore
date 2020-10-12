@@ -1,4 +1,4 @@
+.gitignore
 .idea/
-.npmignore
 hello-wolrd.gif
 node_modules/
