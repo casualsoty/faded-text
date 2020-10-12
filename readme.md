@@ -55,4 +55,4 @@ const FADED_TEXT = new FadedText('idElement');
 
 FadedText.charFadeIn();
 ```
-![Hello world](hello-world.gif)
+![Hello world](https://github.com/knouy/faded-text/blob/master/hello-world.gif)
