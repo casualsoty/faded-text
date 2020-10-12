@@ -1,3 +1,6 @@
+/**
+ * @param { string } idElement
+ */
 export default function FadedText (idElement) {
   this.id = document.getElementById(idElement).id;
   this.textContent = document.getElementById(idElement).textContent;

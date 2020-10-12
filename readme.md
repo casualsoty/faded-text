@@ -1,4 +1,21 @@
 # Faded Text
+![](https://img.shields.io/npm/dt/faded-text)
+![](https://img.shields.io/npm/v/faded-text)
+![](https://img.shields.io/npm/collaborators/faded-text)
+![](https://img.shields.io/github/package-json/v/knouy/faded-text)
+> Letter-by-letter and word-by-word text fade animation.
+## Table of Contents
+* [Requirement](#requirement)
+* [Installation](#installation)
+* [Usage](#usage)
+  * [Documentation](#documentation)
+  * [Example](#example)
+    * [HTML](#html)
+    * [JS](#js)
+    * [Rendering](#rendering)
+* [Author](#author)
+## Requirement
+* [Node.js](https://nodejs.org/)
 ## Installation
 ```bash
 npm i faded-text
@@ -8,51 +25,73 @@ npm i faded-text
 <table>
     <thead>
         <tr>
-            <th>Functions</th>
+            <th>Function</th>
+            <th>Description</th>
             <th colspan="3">Arguments</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>.charFadeIn()</td>
+            <td><b>.charFadeIn()</b></td>
+            <td>Display the matched elements by fading them to opaque letter-by-character.</td>
             <td rowspan="4">
-                textDuration (default: 1000)<br>
-                Type: Number
+                <b>textDuration</b><br>
+                (default: 1000)<br>
+                Type: Integer<br>
+                <br>
+                An integer determining the number of milliseconds the total animation will run.
             </td>
             <td rowspan="2">
-                charDuration (default: 1000)<br>
-                Type: Number
+                <b>charDuration</b><br>
+                (default: 1000)<br>
+                Type: Integer<br>
+                <br>
+                An integer determining the number of milliseconds the character animation will run.
             </td>
             <td rowspan="4">
-                delay (default: 0)<br>
-                Type: Number
+                <b>delay</b><br>
+                (default: 0)<br>
+                Type: Integer<br>
+                <br>
+                An integer indicating the number of milliseconds to delay execution of the animation.
             </td>
         </tr>
         <tr>
-            <td>.charFadeOut()</td>
+            <td><b>.charFadeOut()</b></td>
+            <td>Hide the matched elements by fading them to transparent letter-by-letter.</td>
         </tr>
         <tr>
-            <td>.wordFadeIn()</td>
+            <td><b>.wordFadeIn()</b></td>
+            <td>Display the matched elements by fading them to opaque word-by-word.</td>
             <td rowspan="2">
-                wordDuration (default: 1000)<br>
-                Type: Number
+                <b>wordDuration</b><br>
+                (default: 1000)<br>
+                Type: Integer<br>
+                <br>
+                An integer determining the number of milliseconds the word animation will run.
             </td>
         </tr>
         <tr>
-            <td>.wordFadeOut()</td>
+            <td><b>.wordFadeOut()</b></td>
+            <td>Hide the matched elements by fading them to transparent word-by-word.</td>
         </tr>
     </tbody>
 </table>
 
 ### Example
+#### HTML
 ```html
 <div id="idElement">Hello world</div>
 ```
-```javascript
+#### JS
+```js
 import FadedText from '/faded-text';
 
 const FADED_TEXT = new FadedText('idElement');
 
-FadedText.charFadeIn();
+FADED_TEXT.charFadeIn();
 ```
+#### Rendering
 ![Hello world](https://github.com/knouy/faded-text/blob/master/hello-world.gif)
+## Author
+### [Tanguy Sanquirgo](https://github.com/knouy)
