@@ -1,62 +1,72 @@
-export default function FadedText (element) {
-  this.id = element.id;
-  this.textContent = element.textContent;
+export default function FadedText (idElement) {
+  this.id = document.getElementById(idElement).id;
+  this.textContent = document.getElementById(idElement).textContent;
 }
 
 /**
- * @param { number } duration
+ * @param { number } textDuration
+ * @param { number } charDuration
  * @param { number } delay
  */
-FadedText.prototype.charFadeIn = function (duration, delay) {
-  let temp = Math.random().toString(36).substr(2);
+FadedText.prototype.charFadeIn = function (textDuration = 1000, charDuration =
+  1000, delay = 0) {
+  let id = Math.random().toString(36).substr(2);
   document.getElementById(this.id).innerHTML =
-    [...this.textContent].map((c, i) => '<span id="' + this.id + '-' + temp +
-      '-' + i + '" style="visibility: hidden">' + c + '</span>').join('');
+    [...this.textContent].map((c, i) => '<span id="' + this.id + '-' + id +
+      '-' + i + '" style="opacity: 0; transition: ' + charDuration + 'ms">' +
+      c + '</span>').join('');
   [...this.textContent].forEach((c, i) => setTimeout(() =>
-    document.getElementById(this.id + '-' + temp + '-' + i).style.visibility =
-      'visible', Math.floor(Math.random() * duration) + delay));
+    document.getElementById(this.id + '-' + id + '-' + i).style.opacity = '1',
+    Math.floor(Math.random() * textDuration) + delay));
 }
 
 /**
- * @param { number } duration
+ * @param { number } textDuration
+ * @param { number } charDuration
  * @param { number } delay
  */
-FadedText.prototype.charFadeOut = function (duration, delay) {
-  let temp = Math.random().toString(36).substr(2);
+FadedText.prototype.charFadeOut = function (textDuration = 1000, charDuration =
+  1000, delay = 0) {
+  let id = Math.random().toString(36).substr(2);
   document.getElementById(this.id).innerHTML =
-    [...this.textContent].map((c, i) => '<span id="' + this.id + '-' + temp +
-      '-' + i + '" style="visibility: visible">' + c + '</span>').join('');
+    [...this.textContent].map((c, i) => '<span id="' + this.id + '-' + id +
+      '-' + i + '" style="opacity: 1; transition: ' + charDuration + 'ms">' +
+      c + '</span>').join('');
   [...this.textContent].forEach((c, i) => setTimeout(() =>
-    document.getElementById(this.id + '-' + temp + '-' + i).style.visibility =
-      'hidden', Math.floor(Math.random() * duration) + delay));
+    document.getElementById(this.id + '-' + id + '-' + i).style.opacity = '0',
+    Math.floor(Math.random() * textDuration) + delay));
 }
 
 /**
- * @param { number } duration
+ * @param { number } textDuration
+ * @param { number } wordDuration
  * @param { number } delay
  */
-FadedText.prototype.wordFadeIn = function (duration, delay) {
-  let temp = Math.random().toString(36).substr(2);
+FadedText.prototype.wordFadeIn = function (textDuration = 1000, wordDuration =
+  1000, delay = 0) {
+  let id = Math.random().toString(36).substr(2);
   document.getElementById(this.id).innerHTML =
     this.textContent.split(' ').map((w, i) => '<span id="' + this.id + '-' +
-      temp + '-' + i + '" style="visibility: hidden">' + w +
-      '&nbsp</span>').join('');
+      id + '-' + i + '" style="opacity: 0; transition: ' + wordDuration +
+      'ms">' + w + '&nbsp</span>').join('');
   this.textContent.split(' ').forEach((w, i) => setTimeout(() =>
-    document.getElementById(this.id + '-' + temp + '-' + i).style.visibility =
-      'visible', Math.floor(Math.random() * duration) + delay));
+    document.getElementById(this.id + '-' + id + '-' + i).style.opacity = '1',
+    Math.floor(Math.random() * textDuration) + delay));
 }
 
 /**
- * @param { number } duration
+ * @param { number } textDuration
+ * @param { number } wordDuration
  * @param { number } delay
  */
-FadedText.prototype.wordFadeOut = function (duration, delay) {
-  let temp = Math.random().toString(36).substr(2);
+FadedText.prototype.wordFadeOut = function (textDuration = 1000, wordDuration =
+  1000, delay = 0) {
+  let id = Math.random().toString(36).substr(2);
   document.getElementById(this.id).innerHTML =
     this.textContent.split(' ').map((w, i) => '<span id="' + this.id + '-' +
-      temp + '-' + i + '" style="visibility: visible">' + w +
-      '&nbsp</span>').join('');
+      id + '-' + i + '" style="opacity: 1; transition: ' + wordDuration +
+      'ms">' + w + '&nbsp</span>').join('');
   this.textContent.split(' ').forEach((w, i) => setTimeout(() =>
-    document.getElementById(this.id + '-' + temp + '-' + i).style.visibility =
-      'hidden', Math.floor(Math.random() * duration) + delay));
+    document.getElementById(this.id + '-' + id + '-' + i).style.opacity = '0',
+    Math.floor(Math.random() * textDuration) + delay));
 }
