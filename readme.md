@@ -92,6 +92,6 @@ const FADED_TEXT = new FadedText('idElement');
 FADED_TEXT.charFadeIn();
 ```
 #### Rendering
-![Hello world](https://github.com/knouy/faded-text/blob/master/hello-world.gif)
+![Hello world](https://raw.githubusercontent.com/knouy/faded-text/master/hello-world.gif)
 ## Author
 ### [Tanguy Sanquirgo](https://github.com/knouy)
