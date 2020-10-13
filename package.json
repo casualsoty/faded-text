@@ -1,6 +1,6 @@
 {
   "name": "faded-text",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Letter-by-letter and word-by-word text fade animation.",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,6 @@
     "word"
   ],
   "author": "Tanguy Sanquirgo <sanquirgotanguy@gmail.com> (https://github.com/knouy)",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
