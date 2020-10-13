@@ -1,5 +1,8 @@
 # Faded Text
 ![](https://img.shields.io/npm/dt/faded-text)
+![](https://img.shields.io/github/package-json/keywords/knouy/faded-text)
+![](https://img.shields.io/bundlephobia/min/faded-text)
+![](https://img.shields.io/bundlephobia/minzip/faded-text)
 ![](https://img.shields.io/npm/v/faded-text)
 ![](https://img.shields.io/npm/collaborators/faded-text)
 ![](https://img.shields.io/github/package-json/v/knouy/faded-text)

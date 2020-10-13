@@ -1,17 +1,17 @@
 {
   "name": "faded-text",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Letter-by-letter and word-by-word text fade animation.",
   "main": "faded-text.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "javascript",
     "animation",
     "fade",
-    "text",
+    "javascript",
     "letter",
+    "text",
     "word"
   ],
   "author": "Tanguy Sanquirgo <sanquirgotanguy@gmail.com> (https://github.com/knouy)",
