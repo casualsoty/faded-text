@@ -85,7 +85,7 @@ npm i faded-text
 ```
 #### JS
 ```js
-import FadeText from 'path';
+import FadeText from 'faded-text';
 
 const FADED_TEXT = new FadedText('idElement');
 
