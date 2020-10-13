@@ -1,5 +1,6 @@
 .gitignore
 .idea/
+faded-text-min.js
 hello-world.gif
 node_modules/
 package-lock.json
