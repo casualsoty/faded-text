@@ -1,6 +1,6 @@
 {
   "name": "faded-text",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Letter-by-letter and word-by-word text fade animation.",
   "main": "index.js",
   "scripts": {
