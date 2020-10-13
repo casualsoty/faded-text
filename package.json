@@ -15,6 +15,5 @@
     "word"
   ],
   "author": "Tanguy Sanquirgo <sanquirgotanguy@gmail.com> (https://github.com/knouy)",
-  "license": "ISC",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "license": "ISC"
 }
