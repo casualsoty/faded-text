@@ -11,7 +11,7 @@
 * [Requirement](#requirement)
 * [Installation](#installation)
   * [CDN](#cdn)
-    * [jsDeliver](#jsdeliver)
+    * [jsDelivr](#jsdelivr)
   * [Package manager](#package-manager)
     * [npm](#npm)
     * [Yarn](#yarn)
@@ -26,9 +26,9 @@
 * [Node.js](https://nodejs.org/) (npm)
 ## Installation
 ### CDN
-#### jsDeliver
+#### jsDelivr
 ```
-https://cdn.jsdeliver.net/npm/faded-text@0.0.8/dist/faded-text.min.js
+https://cdn.jsdelivr.net/npm/faded-text@0.0.8/dist/faded-text.min.js
 ```
 ### Package manager
 #### npm
