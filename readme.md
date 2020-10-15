@@ -10,6 +10,11 @@
 ## Table of Contents
 * [Requirement](#requirement)
 * [Installation](#installation)
+  * [CDN](#cdn)
+    * [jsDeliver](#jsdeliver)
+  * [Package manager](#package-manager)
+    * [npm](#npm)
+    * [Yarn](#yarn)
 * [Usage](#usage)
   * [Documentation](#documentation)
   * [Example](#example)
@@ -18,10 +23,21 @@
     * [Rendering](#rendering)
 * [Author](#author)
 ## Requirement
-* [Node.js](https://nodejs.org/)
+* [Node.js](https://nodejs.org/) (npm)
 ## Installation
-```bash
+### CDN
+#### jsDeliver
+```
+https://cdn.jsdeliver.net/npm/faded-text@0.0.8/dist/faded-text.min.js
+```
+### Package manager
+#### npm
+```
 npm i faded-text
+```
+#### Yarn
+```
+yarn add faded-text
 ```
 ## Usage
 ### Documentation
