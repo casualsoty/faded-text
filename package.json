@@ -1,6 +1,6 @@
 {
   "name": "faded-text",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Letter-by-letter and word-by-word text fade animation.",
   "main": "faded-text.js",
   "scripts": {
@@ -17,6 +17,9 @@
   "author": "Tanguy Sanquirgo <sanquirgotanguy@gmail.com> (https://github.com/knouy)",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "terser": "^5.3.5"
   }
 }

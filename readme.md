@@ -27,16 +27,16 @@
 ## Installation
 ### CDN
 #### jsDelivr
-```
-https://cdn.jsdelivr.net/npm/faded-text@0.0.8/dist/faded-text.min.js
+```bash
+https://cdn.jsdelivr.net/npm/faded-text@0.0.9/dist/faded-text.min.js
 ```
 ### Package manager
 #### npm
-```
+```bash
 npm i faded-text
 ```
 #### Yarn
-```
+```bash
 yarn add faded-text
 ```
 ## Usage

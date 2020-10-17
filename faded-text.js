@@ -13,8 +13,8 @@ export default function FadedText (idElement) {
  * @param { number } charDuration
  * @param { number } delay
  */
-FadedText.prototype.charFadeIn = function (textDuration = 1000, charDuration =
-  1000, delay = 0) {
+FadedText.prototype.charFadeIn = function (textDuration = 1000,
+                                           charDuration = 1000, delay = 0) {
   let id = Math.random().toString(36).substr(2);
   document.getElementById(this.id).innerHTML =
     [...this.textContent].map((c, i) => '<span id="' + this.id + '-' + id +
@@ -30,8 +30,8 @@ FadedText.prototype.charFadeIn = function (textDuration = 1000, charDuration =
  * @param { number } charDuration
  * @param { number } delay
  */
-FadedText.prototype.charFadeOut = function (textDuration = 1000, charDuration =
-  1000, delay = 0) {
+FadedText.prototype.charFadeOut = function (textDuration = 1000,
+                                            charDuration = 1000, delay = 0) {
   let id = Math.random().toString(36).substr(2);
   document.getElementById(this.id).innerHTML =
     [...this.textContent].map((c, i) => '<span id="' + this.id + '-' + id +
@@ -47,8 +47,8 @@ FadedText.prototype.charFadeOut = function (textDuration = 1000, charDuration =
  * @param { number } wordDuration
  * @param { number } delay
  */
-FadedText.prototype.wordFadeIn = function (textDuration = 1000, wordDuration =
-  1000, delay = 0) {
+FadedText.prototype.wordFadeIn = function (textDuration = 1000,
+                                           wordDuration = 1000, delay = 0) {
   let id = Math.random().toString(36).substr(2);
   document.getElementById(this.id).innerHTML =
     this.textContent.split(' ').map((w, i) => '<span id="' + this.id + '-' +
@@ -64,8 +64,8 @@ FadedText.prototype.wordFadeIn = function (textDuration = 1000, wordDuration =
  * @param { number } wordDuration
  * @param { number } delay
  */
-FadedText.prototype.wordFadeOut = function (textDuration = 1000, wordDuration =
-  1000, delay = 0) {
+FadedText.prototype.wordFadeOut = function (textDuration = 1000,
+                                            wordDuration = 1000, delay = 0) {
   let id = Math.random().toString(36).substr(2);
   document.getElementById(this.id).innerHTML =
     this.textContent.split(' ').map((w, i) => '<span id="' + this.id + '-' +
