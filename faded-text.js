@@ -1,4 +1,5 @@
 /* terser faded-text.js -o dist/faded-text.min.js -c -m */
+/* terser faded-text.js -o docs/dist/faded-text.min.js -c -m */
 
 /**
  * @param { string } idElement
