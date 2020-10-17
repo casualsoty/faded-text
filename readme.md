@@ -21,7 +21,7 @@
     * [HTML](#html)
     * [JS](#js)
     * [Rendering](#rendering)
-    * [Demo](#demohttpsknouygithubiofaded-text)
+    * [Demo](#demo)
 * [Author](#author)
 ## Requirement
 * [Node.js](https://nodejs.org/) (npm)
@@ -113,6 +113,7 @@ FADED_TEXT.charFadeIn();
 ```
 #### Rendering
 ![Hello world](https://raw.githubusercontent.com/knouy/faded-text/master/hello-world.gif)
-#### [Demo](https://knouy.github.io/faded-text)
+#### Demo
+https://knouy.github.io/faded-text
 ## Author
 ### [Tanguy Sanquirgo](https://github.com/knouy)
