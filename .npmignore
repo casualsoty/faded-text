@@ -1,6 +1,7 @@
 .gitignore
 .idea/
 docs/
+gulpfile.js
 hello-world.gif
 node_modules/
 package-lock.json

@@ -29,7 +29,7 @@
 ### CDN
 #### jsDelivr
 ```bash
-https://cdn.jsdelivr.net/npm/faded-text@0.0.9/dist/faded-text.min.js
+https://cdn.jsdelivr.net/npm/faded-text@0.0.10/dist/faded-text.min.js
 ```
 ### Package manager
 #### npm
