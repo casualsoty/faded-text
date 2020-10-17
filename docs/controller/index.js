@@ -1,3 +1,3 @@
-import FadedText from '../../dist/faded-text.min.js';
+import FadedText from "../dist/faded-text.min";
 
 new FadedText('idElement').charFadeIn();
