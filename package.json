@@ -1,6 +1,6 @@
 {
   "name": "faded-text",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Letter-by-letter and word-by-word text fade animation.",
   "main": "faded-text.js",
   "scripts": {
@@ -20,6 +20,6 @@
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "terser": "^5.3.5"
+    "terser": "^5.3.7"
   }
 }

@@ -16,7 +16,7 @@ export default function FadedText (idElement) {
  */
 FadedText.prototype.charFadeIn = function (textDuration = 1000,
                                            charDuration = 1000, delay = 0) {
-  let id = Math.random().toString(36).substr(2);
+  let id = Math.random().toString(36).substring(2);
   document.getElementById(this.id).innerHTML =
     [...this.textContent].map((c, i) => '<span id="' + this.id + '-' + id +
       '-' + i + '" style="opacity: 0; transition: ' + charDuration + 'ms">' +
@@ -26,6 +26,7 @@ FadedText.prototype.charFadeIn = function (textDuration = 1000,
     Math.floor(Math.random() * textDuration) + delay));
 }
 
+// noinspection JSUnusedGlobalSymbols
 /**
  * @param { number } textDuration
  * @param { number } charDuration
@@ -33,7 +34,7 @@ FadedText.prototype.charFadeIn = function (textDuration = 1000,
  */
 FadedText.prototype.charFadeOut = function (textDuration = 1000,
                                             charDuration = 1000, delay = 0) {
-  let id = Math.random().toString(36).substr(2);
+  let id = Math.random().toString(36).substring(2);
   document.getElementById(this.id).innerHTML =
     [...this.textContent].map((c, i) => '<span id="' + this.id + '-' + id +
       '-' + i + '" style="opacity: 1; transition: ' + charDuration + 'ms">' +
@@ -43,6 +44,7 @@ FadedText.prototype.charFadeOut = function (textDuration = 1000,
     Math.floor(Math.random() * textDuration) + delay));
 }
 
+// noinspection JSUnusedGlobalSymbols
 /**
  * @param { number } textDuration
  * @param { number } wordDuration
@@ -50,7 +52,7 @@ FadedText.prototype.charFadeOut = function (textDuration = 1000,
  */
 FadedText.prototype.wordFadeIn = function (textDuration = 1000,
                                            wordDuration = 1000, delay = 0) {
-  let id = Math.random().toString(36).substr(2);
+  let id = Math.random().toString(36).substring(2);
   document.getElementById(this.id).innerHTML =
     this.textContent.split(' ').map((w, i) => '<span id="' + this.id + '-' +
       id + '-' + i + '" style="opacity: 0; transition: ' + wordDuration +
@@ -60,6 +62,7 @@ FadedText.prototype.wordFadeIn = function (textDuration = 1000,
     Math.floor(Math.random() * textDuration) + delay));
 }
 
+// noinspection JSUnusedGlobalSymbols
 /**
  * @param { number } textDuration
  * @param { number } wordDuration
@@ -67,7 +70,7 @@ FadedText.prototype.wordFadeIn = function (textDuration = 1000,
  */
 FadedText.prototype.wordFadeOut = function (textDuration = 1000,
                                             wordDuration = 1000, delay = 0) {
-  let id = Math.random().toString(36).substr(2);
+  let id = Math.random().toString(36).substring(2);
   document.getElementById(this.id).innerHTML =
     this.textContent.split(' ').map((w, i) => '<span id="' + this.id + '-' +
       id + '-' + i + '" style="opacity: 1; transition: ' + wordDuration +
