@@ -29,7 +29,7 @@
 ### CDN
 #### jsDelivr
 ```bash
-https://cdn.jsdelivr.net/npm/faded-text@0.0.11/dist/faded-text.min.js
+https://cdn.jsdelivr.net/npm/faded-text@0.0.13/dist/faded-text.min.js
 ```
 ### Package manager
 #### npm
@@ -105,7 +105,7 @@ yarn add faded-text
 ```
 #### JS
 ```js
-import FadeText from 'faded-text';
+import FadedText from 'faded-text';
 
 const FADED_TEXT = new FadedText('idElement');
 
